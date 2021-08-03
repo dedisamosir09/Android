@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.publics.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_bottom"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_marginHorizontal="10dp"
+                            style="@style/dividerVertical" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/bca"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:text="Nama User"/>
+
+                            <TextView
+                                android:id="@+id/txtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="email@email.com"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/laySearch"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/img_login"
+                        android:layout_width="400dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/background_profile" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/img_profile"
+                        android:layout_marginTop="-60dp"
+                        android:layout_marginLeft="20dp"
+                        app:civ_border_width="2dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtEmail2"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:layout_height="match_parent"
+                        android:text="dedisamosir97@gmail.com"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:textSize="14dp"
+                        android:layout_height="match_parent"
+                        android:text="087871273564"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnPassword"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/black_500"
+                android:backgroundTint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:drawableRight="@drawable/ic_baseline_vpn_key"
+                android:drawableTint="@color/black_500"
+                android:text="Ganti Kata Sandi" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:backgroundTint="@color/green"
+                android:drawableRight="@drawable/ic_baseline_exit_to_app"
+                android:text="Logout" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:layout_marginTop="-20dp"
+                android:src="@drawable/tiket" />
+
+            <TextView
+                android:id="@+id/txtSeatNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textColor="@color/salmon"
+                android:text="20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:text="Nomor Kursi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtAgency"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Nama Agency" />
+
+
+                <TextView
+                    android:id="@+id/txtJourneyDate"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:text="1 Januari 2021" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/point_map" />
+
+                <TextView
+                    android:id="@+id/txtfrom"
+                    android:layout_width="254dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="From : " />
+
+                <TextView
+                    android:id="@+id/txtSourceStop"
+                    android:layout_width="254dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Jakarta"
+                    android:textAlignment="textEnd" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="-30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo" />
+
+
+                <TextView
+                    android:id="@+id/txt_to"
+                    android:layout_width="254dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="To : " />
+
+                <TextView
+                    android:id="@+id/txtDestinationStop"
+                    android:layout_width="254dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="Medan"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_height="1dp"
+                android:background="@color/black_200"
+                android:layout_marginVertical="10dp"
+                style="@style/dividerHorizontal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Bus Code" />
+
+
+                <TextView
+                    android:id="@+id/txtBus"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:text="PJ01" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

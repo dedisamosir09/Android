@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".controller.publics.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:id="@+id/topbar"
+            android:background="@drawable/rounded_bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="226dp"
+                android:src="@drawable/booking" />
+
+        </LinearLayout>
+        android:layout_marginLeft="-30dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:textColor="@color/salmon"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/white"
+
+            android:text="Detail Tiket"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/topbar"
+        android:background="@drawable/card_background"
+        android:weightSum="2">
+
+
+        <ImageView
+            android:id="@+id/detail_item1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/point_map" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="120dp"
+                android:id="@+id/txtSourceStop"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_200"
+                android:background="@color/white"
+                android:text="Harmoni"/>
+            <TextView
+                android:layout_width="150dp"
+                android:id="@+id/txtJourneyDate"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black_200"
+                android:text="25-10-2021"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="120dp"
+                android:id="@+id/txtDestinationStop"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_200"
+                android:background="@color/white"
+                android:text="Kota"/>
+            <TextView
+                android:layout_width="120dp"
+                android:id="@+id/txtAgency"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_200"
+                android:background="@color/white"
+                android:text="Tj"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_marginLeft="-50dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_detail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-20dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/logo_detail" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <Button
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bca"
+            android:drawableTint="@color/bca"
+            android:id="@+id/btnPesanTiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="150dp"
+            android:drawableRight="@drawable/ic_baseline_confirmation_number"
+            android:text="Booking"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

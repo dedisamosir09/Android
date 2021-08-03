@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/frHome"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/ftTicket"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_confirmation_number"
+        android:title="Ticket"/>
+    <item
+        android:id="@+id/frProfile"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person"
+        android:title="Profile"/>
+
+<!--    <item-->
+<!--        android:id="@+id/frLogout"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_baseline_exit_to_app"-->
+<!--        android:title="Log Out"/>-->
+</menu>

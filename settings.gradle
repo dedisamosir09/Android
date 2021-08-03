@@ -1,0 +1,2 @@
+rootProject.name = "Final Project Dedi"
+include ':app'
